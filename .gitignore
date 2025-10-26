@@ -1,0 +1,19 @@
+# Ignore build outputs
+bin/
+obj/
+
+# Visual Studio / VS Code specific
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains IDE
+.idea/
+*.iml
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
