@@ -7,7 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 using SIGEVENT2.Application.Membership.Mapping;
 using SIGEVENT2.Infrastructure.Identity;
 
-namespace SIGEVENT2.Presentation.Membership.Controllers
+namespace SIGEVENT2.Presentation.API.Membership.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

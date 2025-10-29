@@ -4,7 +4,7 @@
 // using SIGEVENT2.Models;
 // using SIGEVENT2.Services;
 
-// namespace SIGEVENT2.Presentation.Test.Controllers
+// namespace SIGEVENT2.Presentation.API.Test.Controllers
 // {
 //     [ApiController]
 //     [Route("[controller]")]
