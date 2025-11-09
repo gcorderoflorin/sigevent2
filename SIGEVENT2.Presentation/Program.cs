@@ -112,6 +112,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+else
+{
+    app.UseDefaultFiles();
+    app.UseStaticFiles();
+    app.MapFallbackToFile("index.html");
+}
 
 app.UseHttpsRedirection();
 
@@ -122,5 +128,23 @@ app.UseAuthorization();
 app.MapGet("/", () => "Welcome to SIGEVENT2 API!");
 
 app.MapControllers();
+
+// app.UseSpa(spa =>
+// {
+//     spa.Options.SourcePath = "Web";
+
+//     if (app.Environment.IsDevelopment())
+//     {
+//         // Proxy Angular dev server (ng serve)
+//         spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
+//     }
+// });
+if (!app.Environment.IsDevelopment())
+{
+    app.UseSpa(spa =>
+    {
+        spa.Options.SourcePath = "Web";
+    });
+}
 
 app.Run();
